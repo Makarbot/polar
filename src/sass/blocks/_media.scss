@@ -1,0 +1,50 @@
+@media screen and (max-width: 1200px) {
+    .promo {
+        min-height: 545px;
+        padding: 12px 0 50px 0;
+        &__wrapper {
+            margin-top: 50px;
+        }
+        &__header{
+            font-size: 38px; 
+        }
+        &__subheader {
+            margin-top: 0;
+            font-size: 21px;
+        }
+        &__icons {
+            margin-top: 25px;
+            width: 390px;
+        }
+    }
+    .button {
+        &_main {
+            margin-top: 45px;
+        }
+    }
+}    
+/* ------------------------------------------------------------------------------ */
+@media screen and (max-width: 991px){
+    .header{
+        padding: 0 7px 0 7px;
+    }
+    .promo {
+        min-height: 545px;
+        padding: 7px 0 50px 0;
+        &__wrapper {
+            margin-top: 29px;
+            padding-right: 7px;
+        }
+        &__header{
+            font-size: 36px; 
+        }
+        &__subheader {
+            margin-top: 0;
+            font-size: 19px;
+        }
+        &__icons {
+            margin-top: 22px;
+            width: 370px;
+        }
+    }
+}

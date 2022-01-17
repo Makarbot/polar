@@ -1,0 +1,49 @@
+.content {
+    padding: 65px 0 65px 0;
+    &__header {
+        color: #0D0D0D;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+    }
+    &__logos {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-around;
+        img {
+            display: block;
+        }
+    }
+    &__text{
+        display: flex;
+        height: 140;
+        width: inherit;
+        text-align: center;
+        justify-content: space-around;
+
+    }
+    &__text_block {
+        margin-top: 30px;
+        display: block;
+        width: 269px;
+        height: 140px;
+    }
+    &__text_title {
+        
+        color: #0D0D0D;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    &__text_info {
+        display: block;
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: calc(18 / 14 * 100%);
+        a {
+            color: #FF0000;
+            font-family: MuseoModerno;
+            font-weight: 400;
+        }
+    }
+}
