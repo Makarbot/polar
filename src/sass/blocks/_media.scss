@@ -29,7 +29,7 @@
         padding: 0 7px 0 7px;
     }
     .promo {
-        min-height: 545px;
+        min-height: 445px;
         padding: 7px 0 50px 0;
         &__wrapper {
             margin-top: 29px;
@@ -45,6 +45,38 @@
         &__icons {
             margin-top: 22px;
             width: 370px;
+        }
+    }
+}
+/* ------------------------------------------------------------------------------ */
+@media screen and (max-width: 767px) {
+    .header{
+        padding: 0 5px 0 5px;
+        &__logo {
+        width: 195px;
+        }
+        &__phone {
+            font-size: 16px;
+        }
+    }
+    .promo {
+        background-size: 887px 500px;
+        min-height: 445px;
+        padding: 7px 0 50px 0;
+        &__wrapper {
+            margin-top: 29px;
+            padding-right: 7px;
+        }
+        &__header{
+            font-size: 32px; 
+        }
+        &__subheader {
+            margin-top: 0;
+            font-size: 17px;
+        }
+        &__icons {
+            margin-top: 22px;
+            width: 340px;
         }
     }
 }

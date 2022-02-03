@@ -1,4 +1,5 @@
 .container {
+    position: relative;
     max-width: 950px;
     margin: 0 auto;
 }
@@ -8,3 +9,8 @@
 @import 'src/sass/blocks/buttons';
 @import 'src/sass/blocks/content';
 @import 'src/sass/blocks/media';
+@import 'src/sass/blocks/consultation';
+@import 'src/sass/blocks/forms';
+@import 'src/sass/blocks/carousel';
+@import 'src/sass/blocks/catalog';
+@import 'src/sass/blocks/feedback';
