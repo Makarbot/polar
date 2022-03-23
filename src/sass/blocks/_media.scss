@@ -1,5 +1,6 @@
 @media screen and (max-width: 1200px) {
     .promo {
+        object-fit: cover;
         min-height: 545px;
         padding: 12px 0 50px 0;
         &__wrapper {
@@ -29,6 +30,9 @@
         padding: 0 7px 0 7px;
     }
     .promo {
+        width: 100%;
+        background-size: cover;
+        object-fit: cover;
         min-height: 445px;
         padding: 7px 0 50px 0;
         &__wrapper {
@@ -79,4 +83,8 @@
             width: 340px;
         }
     }
+}
+/* -------------------------------------------------------------------------- */
+@media screen and (max-width: 767px) {
+    
 }

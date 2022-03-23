@@ -1,4 +1,6 @@
- $(document).ready(function(){
+'use strict';
+
+$(document).ready(function(){
 
   $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
     $(this)
@@ -28,9 +30,9 @@
         e.preventDefault();
         $('.catalog-item__content').eq(i).toggleClass("catalog-item__content_active");
         $('.catalog-item__list').eq(i).toggleClass("catalog-item__list_active");
-      })
+      });
     });
-  };
+  }
 
   toggleSlide('.catalog-item__link');
   toggleSlide('.catalog-item__back');
@@ -56,23 +58,33 @@
     ) */
   }); 
 
-const slider = tns({
-    container: '.carousel__inner',
-    items: 1,
-    slideBy: 'page',
-    autoplay: false,
-    controls: false,
-    nav: false
-});
-
-document.querySelector('.prev').addEventListener('click', function () {
-    slider.goTo('prev');
+  const slider = tns({
+      container: '.carousel__inner',
+      items: 1,
+      slideBy: 'page',
+      autoplay: false,
+      controls: false,
+      nav: false
   });
 
-document.querySelector('.next').addEventListener('click', function () {
-    slider.goTo('next');
+  document.querySelector('.prev').addEventListener('click', function () {
+      slider.goTo('prev');
+    });
+
+  document.querySelector('.next').addEventListener('click', function () {
+      slider.goTo('next');
+
+    
 });
 
+// Modal
+  
+$('[data-modal=consultation').on('click', function() {
+    $('.overlay, #consultation').fadeIn('slow');                 
+});
+$('.modal__close').on('click', function() {
+    $('.overlay, #consultation, #order, #thanks').fadeOut('slow');
+});
 
     
 
